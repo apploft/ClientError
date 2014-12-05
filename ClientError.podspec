@@ -18,7 +18,7 @@ so you can easily keep track of them.
   
   s.author       = { "Michael Kamphausen" => "michael.kamphausen@apploft.de" }
   
-  s.platform     = :ios
+  s.platform     = :ios, "7.0"
 
   s.source       = { :git => "https://github.com/apploft/ClientError.git", :tag => s.version.to_s }
 
@@ -27,6 +27,6 @@ so you can easily keep track of them.
   
   s.requires_arc = true
   
-  s.dependency   = 'Parse-iOS-SDK', '~> 1.3'
+  s.dependency 'Parse-iOS-SDK', '~> 1.3'
 
 end

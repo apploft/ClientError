@@ -12,7 +12,7 @@ class ClientError : PFObject, PFSubclassing {
     @NSManaged var domain: String?
     @NSManaged var code: Int
     @NSManaged var userInfo: [NSObject: AnyObject]?
-    @NSManaged var installation: Installation?
+    @NSManaged var installation: PFInstallation?
     
     override class func load() {
         self.registerSubclass()
@@ -23,7 +23,7 @@ class ClientError : PFObject, PFSubclassing {
         domain = error.domain
         code = error.code
         userInfo = error.userInfo
-        installation = Installation.currentInstallation()
+        installation = PFInstallation.currentInstallation()
     }
     
     convenience init(domain: String?, code: Int?, userInfo: [NSObject: AnyObject]?) {
@@ -31,7 +31,7 @@ class ClientError : PFObject, PFSubclassing {
         self.domain = domain
         self.code = code != nil ? code! : 0
         self.userInfo = userInfo
-        installation = Installation.currentInstallation()
+        installation = PFInstallation.currentInstallation()
     }
     
     class func parseClassName() -> String! {
