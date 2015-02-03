@@ -28,6 +28,6 @@ so you can easily keep track of them.
   
   s.requires_arc = true
   
-  s.dependency 'Parse-iOS-SDK', '~> 1.3'
+  s.dependency 'Parse', '~> 1.6'
 
 end

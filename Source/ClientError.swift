@@ -38,10 +38,10 @@ class ClientError : PFObject, PFSubclassing {
     }
     
     class func reportError(error: NSError) {
-        ClientError(error: error).saveEventually()
+        ClientError(error: error).saveEventually(nil)
     }
     
     class func reportError(domain: String?, code: Int?, userInfo: [NSObject: AnyObject]?) {
-        ClientError(domain: domain, code: code, userInfo: userInfo).saveEventually()
+        ClientError(domain: domain, code: code, userInfo: userInfo).saveEventually(nil)
     }
 }
