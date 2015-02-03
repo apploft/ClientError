@@ -18,12 +18,13 @@ so you can easily keep track of them.
   
   s.author       = { "Michael Kamphausen" => "michael.kamphausen@apploft.de" }
   
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
+  
+  s.ios.deployment_target = '8.0'
 
   s.source       = { :git => "https://github.com/apploft/ClientError.git", :tag => s.version.to_s }
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m,swift}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files = "Source/*.swift"
   
   s.requires_arc = true
   
