@@ -55,7 +55,7 @@ In your Parse Account, go to *Jobs* and *Schedule a Job*. Give it a description 
 * `elapsedHours` (optional): find and send errors that occured during the last x hours, default is one day
 * `limit` (optional): reported errors per mail, maximum and default is 1000 
 * `omitMailIfNoError` (optional): do not send a mail report if the count of new errors is zero, default is true
-* `installationDigits` (optional): anonymize the Parse Installation ID where the error occured for privacy and security reasons to the first 4 digits as default e.g. 'jd7a******'. 0 would be completely hidden ('**********'), 10 would be full length ('jd7a0asOpY').
+* `installationDigits` (optional): anonymize the Parse Installation ID where the error occured for privacy and security reasons to the first 4 digits as default e.g. 'jd7a\*\*\*\*\*\*'. 0 would be completely hidden ('\*\*\*\*\*\*\*\*\*\*'), 10 would be full length ('jd7a0asOpY').
 
 These are the minimal parameters required for Mandrill as example:
 
