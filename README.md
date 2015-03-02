@@ -10,9 +10,14 @@ Additionally, you will find a configurable Parse cloud code job in the `ParseJob
 so you can easily keep track of them.
 
 ## Installation
-Install via cocoapods by adding this to your Podfile:
+Add _ClientError.swift_ to your project and add the Parse SDK to your _Podfile_
 
-	pod "ClientError"
+	pod "Parse"
+	
+and to your Bridging Header:
+
+	#import <Parse/Parse.h>
+	#import <Parse/PFObject+Subclass.h>
 
 ## Usage
 
