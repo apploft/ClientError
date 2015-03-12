@@ -71,7 +71,7 @@ These are the minimal parameters required for Mandrill as example:
 	"credentials": ["YOUR_MANDRILL_API_KEY"],
 	"parameters": {
 	  "message": {
-	    "subject": "My Projects's Weekly Error Report",
+	    "subject": "My Projects's Daily Error Report",
 	    "from_email": "myproject@example.com",
 	    "from_name": "My Projects's Backend Service",
 	    "to": [
