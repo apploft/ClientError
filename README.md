@@ -85,4 +85,19 @@ These are the minimal parameters required for Mandrill as example:
 	}
 ```
 
+These are the minimal parameters required for Mailgun as example:
+
+```json
+
+    {
+    "providerName": "mailgun",
+    "credentials": ["YOUR_MAILGUN_DOMAIN", "YOUR_MAILGUN_API_KEY"],
+    "parameters": {
+        "subject": "My Projects's Daily Error Report",
+        "from": "My Projects's Backend Service <myproject@example.com>",
+        "to": "My Name <me@example.com>, Your Name <you@example.com>"
+      }
+    }
+```
+
 The email report itself is a simple, comma-separated, plain text list.
